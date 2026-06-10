@@ -1,5 +1,6 @@
 # 🐾 HoneyDog — SSH Honeypot & Active Defense Tool
 
+<img width="716" height="186" alt="Captura de pantalla 2026-06-10 215421" src="https://github.com/user-attachments/assets/39fd1f4e-87d4-449d-af4d-c494166c7e58" />
 `HoneyDog` es una herramienta de ciberseguridad activa y engaño (*deception*) diseñada en Python. Funciona levantando un servidor SSH simulado de alta interacción que acepta cualquier credencial de entrada, confunde a los atacantes con una shell falsa de GNU/Linux y audita en tiempo real cada comando ejecutado, enviando alertas push inmediatas a tu móvil a través de la API de Telegram.
 
 A diferencia de las configuraciones rígidas, `HoneyDog` permite al operador **definir dinámicamente el puerto de escucha** por línea de comandos, facilitando su despliegue en puertos alternativos o suplantando el servicio SSH real mediante privilegios de administrador.
@@ -113,6 +114,8 @@ Donde "id", copialo y agregalo en TELEGRAM_CHAT_ID
 ___
 
 🕹️ Modo de Uso (Control del Puerto)
+<img width="642" height="178" alt="Captura de pantalla 2026-06-10 215517" src="https://github.com/user-attachments/assets/3fb773db-a943-471b-a328-7139195a1f5b" />
+
 HoneyDog gestiona los puertos de manera inteligente. Puedes lanzarlo de las siguientes formas:
 
 Puerto por defecto (2222): Ideal para pruebas rápidas sin interferir con tu SSH legítimo.
@@ -142,6 +145,9 @@ Introduce cualquier credencial. El sistema concederá acceso inmediato.
 Inyecta comandos en la shell simulada (whoami, ls, o lee el archivo trampa con cat flag.txt).
 
 Comprueba tu Telegram: el bot te enviará reportes formateados con la IP origen, contraseñas capturadas y los payloads en tiempo real.
+
+<img width="502" height="393" alt="Captura de pantalla 2026-06-10 215531" src="https://github.com/user-attachments/assets/b5383005-e697-48cc-bee5-c5c813d5470c" />
+
 
 ___
 
